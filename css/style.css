@@ -29,15 +29,18 @@ body {
 }
 
 .bluetext {
-    font: bold 60px/1 FuturaCnd, arial, sans-serif;
-    /*text-transform: uppercase;*/
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size:120px;
     color: #00B9FF;
+	text-shadow: 0px 2px #000;
 }
 
 .yellowtext {
-    font: bold 36px/1 FuturaCnd, arial, sans-serif;
-    /*text-transform: uppercase;*/
-    color: #ffc600;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size:30px;
+  text-transform: uppercase;
+  color: #ffc600;
+	text-shadow: 0px 2px #000;
 }
 
 .yellowtext a{
@@ -54,12 +57,14 @@ body {
 }
 
 .whitetext {
-    font: 18px/1 FuturaCnd, arial, sans-serif;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size:30px;
     color: #fff;
 }
 
 .blacktext {
-    font: 18px/1 FuturaCnd, arial, sans-serif;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size:30px;
     color: #333;
 }
 .box {
@@ -145,12 +150,16 @@ body {
 }
 
 .portfoliotextlayer {
-    font-size: 20;
-    margin-top: -24vh;
+    width:70%;
+	height:50%;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	position:absolute;
     word-wrap: normal;
-    overflow: hidden;
     z-index: 10;
-    position: relative;
     color: #fff;
     opacity: 0;
     transition: opacity .25s ease-in-out;
@@ -200,6 +209,198 @@ body {
     left: 0;
     z-index: 11;
 }
+
+/* PORTFOLIO PAGE */
+.portfolio-menu{
+  width:200px;
+	height:100vh;
+	position:relative;
+	display:inline-block;
+	overflow:hidden;
+	background:#000;
+  text-align: center; /* To center menu options*/
+}
+
+.portfolio-menu-option{
+  position: relative;
+  display:inline-block;
+  width: 90%;
+  height: 100px;
+  margin: 8px 0 8px 0;
+  background: #fff;
+  font-size:24;
+  font-family: Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+  border-radius: 15px;
+  opacity: .5;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity .25s ease-in-out;
+}
+.portfolio-menu-option:hover{
+  opacity: .8;
+}
+.portfolio-menu-option.selected:hover{
+  opacity: 1;
+}
+.selected{
+  opacity: 1;
+}
+
+.portfolio-menu-option-text{
+  width:100%;
+  height:50%;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+  position:absolute;
+  word-wrap: normal;
+  z-index: 10;
+}
+
+.portfolio-main{
+  width:calc(100vw - 200px);
+	height:100vh;
+	position:relative;
+	display:inline-block;
+	overflow:hidden;
+  text-align: center; /* To center menu options*/
+}
+
+.portfolio-main-background-wrapper{
+	width:100%;
+	height:100%;
+	position: fixed;
+	z-index: -100;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+
+.portfolio-main-background{
+	position: relative;
+  height: 100vh;
+	left: -25px;
+	right: -25px;
+	top: -25px;
+	bottom: -25px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	filter:blur(8px) brightness(70%);
+}
+
+.portfolio-main-title{
+  width: 90%;
+  font-size: 72px;
+  word-wrap: normal;
+  overflow: hidden;
+  z-index: 10;
+  position: relative;
+  color: #FFF;
+  display:inline-block;
+  margin: 20px 0 0 0;
+  font-family: Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+  text-shadow: 2px 2px #000;
+}
+
+.portfolio-main-below-title{
+  width: 90%;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.portfolio-main-text{
+  width: calc(50% - 30px);
+  font-size: 20px;
+  word-wrap: normal;
+  overflow: hidden;
+  z-index: 10;
+  position: relative;
+  color: #000;
+  background: #FFF;
+  display:inline-block;
+  opacity: 0.8;
+  margin: 0 10px 0 0;
+  text-align: left;
+  padding: 10px 10px 0 10px;
+  font-family: Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+  vertical-align:top;
+  border-radius: 15px;
+}
+
+.portfolio-main-right-rail{
+  width: calc(50% - 10px);
+  font-size: 72px;
+  word-wrap: normal;
+  overflow: hidden;
+  z-index: 10;
+  position: relative;
+  color: #000;
+  display:inline-block;
+  margin: 0 0 0 10px;
+  vertical-align:top;
+}
+
+.portfolio-main-link{
+  width: 100%;
+  height: 60px;
+  font-size: 36px;
+  word-wrap: normal;
+  overflow: hidden;
+  z-index: 10;
+  position: relative;
+  color: #fff;
+  background: #afd48b;
+  display:inline-block;
+  border-radius: 15px;
+  box-shadow: 0 5px #72a082;
+  font-family: Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+  text-shadow: 0px -2px #72a082;
+  padding-top: 20px;
+  transition: transform .25s ease-in-out, box-shadow .25s ease-in-out;
+  text-decoration:none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.portfolio-main-link:hover{
+  transform: translateY(5px);
+  box-shadow: 0 0px #72a082;
+}
+
+.portfolio-main-image{
+  width: 100%;
+  overflow: hidden;
+  z-index: 10;
+  position: relative;
+  display:inline-block;
+  background-repeat: no-repeat;
+	background-size: 100%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.portfolio-youtube {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+  margin-top: 20px;
+}
+.portfolio-youtube iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  
+}
+
+
 /* @media all and (max-width: 739px) {
     .box {
         display: none;

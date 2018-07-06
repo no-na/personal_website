@@ -1,4 +1,14 @@
-<link rel="stylesheet" href="css/style.css">
+<html>
+<head>
+  <title>
+    Noah Nam
+  </title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="../bigtext.js"></script>
+</head>
+	
+
 <div class="header">
   <span class="yellowtext">
     <a href='./'>Home</a>
@@ -10,51 +20,27 @@
     <a href='resume'>Resume</a>
   </span>
 </div>
-
 <div class="lefthalf">
   <div class="text">
-      <h1 class="bluetext" style="color:#ffc600;">Noah Nam</h1>
-      <h3 class="blacktext" style="color:#eee;">Noah Nam is a graduate of Drexel University with a BS in Computer Science, concentrating in Artificial Intelligence and Game Development.
-      <br><br>
-      I live in california~</h3>
+    <h1 id="left" class="bluetext" style="color:#ffc600;"><span>Noah Nam</span></h1>
+    <h3 class="blacktext" style="color:#eee;">I'm a graduate of Drexel University with a Bachelor's of Science degree in Computer Science, with in Artificial Intelligence and Game Development.
+    <br><br>
+    I like making games.</h3>
   </div>
 </div>
-
 
 <div class="righthalf">
   <div class="text">
-      <h1 class="bluetext">Contact</h1>
+      <h1 id="right" class="bluetext"><span>Contact</span></h1>
       <h3 class="blacktext">
         e-mail: noahknam@gmail.com<br>
         phone: (714)-357-4355<br>
-        github: https://github.com/no-na
+        github: <a href="https://github.com/no-na">https://github.com/no-na</a>
       </h3>
   </div>
 </div>
-
-<!-- <div  class="mobilebox">
-   <a href='@replace([@path],"/sitecore/content/Home","")' target="_blank"><div class="mobilelink"></div></a>
-   <div class="mobileimagelayer">
-      [Button Image?class=image]
-   </div>
-   <div class="mobiletextlayer">
-      <center>
-      <p><h1 class="yellowtext">[Menu Title]</h1></p>
-      <p><h3 class="whitetext">[Headline]</h3></p>
-      </center>
-   </div>
-</div > -->
-
-<div class="blacktext" style="
-    display: inline-block;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    margin-top: 40vh;
-    font-size:24px;">
-    e-mail: noahknam@gmail.com<br>
-    phone: (714)-357-4355<br>
-    github: https://github.com/no-na
-  </div>
+<script>
+  $('#left').bigtext({maxfontsize: 120});
+  $('#right').bigtext({maxfontsize: 120});
+</script>
+</html>
